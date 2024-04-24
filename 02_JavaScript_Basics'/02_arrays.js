@@ -4,7 +4,7 @@ let dc_heros = ["supeman","flash","batman"]
 marvel_heros.push(dc_heros) //this will push an array inside another array
 console.log(marvel_heros)
 marvel_heros.pop()
-let all_heros = marvel_heros.concat(dc_heros)
+let all_heros = marvel_heros.concat(dc_heros) // after concat always store in a new array
 console.log(all_heros)
 
 //spread
@@ -25,11 +25,11 @@ console.log(Array.from("rukhsar"))
 let myObj = {
     name:"rukhsar"
 }
-console.log(Array.from(myObj)) // print [] because we have not given whether we want to create array based of values or keys
+console.log(Array.from(myObj)) // print [] because we have not given whether we want to create array based on values or keys
 
 
 const val1 = 100
 const val2 = 200
 const val3 = 300
 
-console.log(Array.of(val1,val2,val3))
+console.log(Array.of(val1,val2,val3)) // create array

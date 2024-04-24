@@ -4,7 +4,7 @@
 let myArray = [1,2,3,4,5,6]
 
 console.log(myArray)
-myArray.push(6)
+myArray.push(7)
 console.log(myArray)
 myArray.pop()
 console.log(myArray)
@@ -20,7 +20,7 @@ console.log(myArray.indexOf(5))
 // splice - manipulate original array
 
 let data = [0,1,2,3,4,5,6]
-let newSliceData = data.slice(1,3)
+let newSliceData = data.slice(1,3) //3 not included
 console.log("A ",data)
 console.log(newSliceData)
 
