@@ -59,3 +59,23 @@ function returnData(MyArray){
 }
 
 console.log(returnData(myArray))
+
+
+
+
+//----------------ways------------------
+
+function addOne(num){
+    return num+1
+}
+
+console.log(addOne(5))
+
+
+const addTwo = function(num){
+    return num+2
+}
+console.log(addTwo(5))
+
+//-----------------------------
+// Note: Here we have seen two ways to declare the function, the difference is that you cannot call the function before declaration in 2nd way
