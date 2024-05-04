@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM</title>
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color:aliceblue;
+            height: 100%;
+            width:100%
+            
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div >
+        <h1 id ="title" class="heading">DOM Learning with me!</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam qui nesciunt quibusdam animi? Repudiandae praesentium itaque quia atque ipsa sint sunt voluptates, possimus reprehenderit. Optio quo quod nobis voluptatum reiciendis.</p>
+        <input type="password" name="pw" id="pw">
+    </div>
+</body>
+</html>
+
+<!-- DOM - document object model 
+console.log(document)
+console.dir(document)
+document.getElementById('title').innerHTML = <p>changed</p> 
+document.getElementById('title').id
+document.getElementById('title').className
+document.getElementById('title').getAttribute('id')
+document.getElementById('title').getAttribute('class')
+document.getElementById('title').setAttribute('id','newName')
+const title = document.getElementById('title').getAttribute('id')
+title.style.backgroundColor = 'green'
+title.textContent - gives invisible contents also: for eg: if display:none then also it shows the data
+title.innerHTML
+title.innerText - gives visible content
+document.querySelector('h1')// gives first h1
+document.querySelector('#id')
+document.querySelector('.class')
+document.querySelector('input[type="password"]')
+
+
+
+Note: NodeList [] and HTMLCollection [] are not pure array, so does'nt have map etc by default. You can use forEach in case of NodeList. If you want functionality of array then convert it into array.
+const temp = document.querySelectorAll('li')// gives all h1
+temp[0].style.color = "green"
+or
+temp.forEach(function (l){
+    l.style.color = "green"
+})
+Note: selecting by querySelectorAll => NodeList[] => use forEach
+      selecting by getElementByClassName => HTMLCollection[] => convert into array => Array.from(HTMLCollection_Name)
+-->
